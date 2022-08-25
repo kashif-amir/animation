@@ -1,0 +1,67 @@
+.portfolio-heading {
+  text-align: center;
+  margin: 20px 0px;
+  font-family: "Crafty Girls", cursive;
+  color: white;
+  font-size: 35px;
+  padding-top: 15px;
+}
+
+.portfolio-category-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  column-gap: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.portfolio-content {
+  font-family: "Crafty Girls", cursive;
+  font-size: 22px;
+}
+
+.animations {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.character-img {
+  margin: 20px 0;
+  height: 220px;
+  width: 200px;
+}
+
+.portfolio-content:hover {
+  color: red;
+}
+
+.portfolio-category-container {
+  background-color: black;
+}
+
+.image-container {
+  height: auto;
+  width: 600px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  align-items: flex-start;
+}
+
+.combine-img {
+  height: 250px;
+  width: 300px;
+}

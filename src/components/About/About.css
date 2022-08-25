@@ -1,0 +1,48 @@
+.aboutpage-img {
+  width: 1275px;
+  height: 525px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.about-conatiner {
+  display: flex;
+  flex-direction: column;
+}
+.about-text {
+  width: 70%;
+  margin: 0 auto;
+  font-size: large;
+  color: white;
+}
+
+.about-main-div {
+  background-color: black;
+}
+
+.first-paragraph {
+  margin-top: 15px;
+  line-height: 2.5rem;
+  font-family: "Crafty Girls", cursive;
+  font-size: 20px;
+}
+
+.about-heading-paragraph {
+  font-family: "Crafty Girls", cursive;
+  font-size: 40px;
+  color: white;
+  padding-top: 20px;
+}
+
+.second-paragraph {
+  font-family: "Crafty Girls", cursive;
+  margin-top: 20px;
+  line-height: 2.5rem;
+  font-size: 20px;
+}
+.third-paragraph {
+  margin-top: 20px;
+  line-height: 2.2rem;
+  font-family: "Crafty Girls", cursive;
+  font-size: 20px;
+}

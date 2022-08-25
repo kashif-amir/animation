@@ -1,0 +1,11 @@
+.video-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.animation-video {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
