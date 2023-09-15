@@ -1,0 +1,103 @@
+@use './variables' as *;
+@use './breakpoints' as *;
+
+@mixin flex($direction, $justify-content, $aligin-item, $column-gap: 0, $row-gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $aligin-item;
+    justify-content: $justify-content;
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+}
+
+@mixin cards-layout($width, $height, $tablet-width, $tablet-height, $mobile-width, $mobile-height) {
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+
+    div {
+        flex: 0 1 $width;
+        margin: 5px;
+        height: $height;
+
+        p,
+        img {
+            width: $width;
+            height: $height;
+        }
+
+        img {
+            width: clamp($width, 1vw, $width);
+            height: clamp($height, 1vw, $height);
+            object-position: 50% 50%;
+            object-fit: cover;
+        }
+    }
+
+    @include tablet {
+        div {
+            flex: 0 1 $tablet-width;
+            height: $tablet-height;
+
+            p,
+            img {
+                width: $tablet-width;
+                height: $tablet-height;
+            }
+
+            img {
+                width: clamp($tablet-width, 1vw, $tablet-width);
+                height: clamp($tablet-height, 1vw, $tablet-height);
+            }
+        }
+    }
+
+    @include mobile {
+        width: 95%;
+
+        div {
+            flex: 0 1 $mobile-width;
+            height: $mobile-height;
+
+            p,
+            img {
+                width: $mobile-width;
+                height: $mobile-height;
+            }
+
+            img {
+                width: clamp($mobile-width, 1vw, $mobile-width);
+                height: clamp($mobile-height, 1vw, $mobile-height);
+            }
+        }
+    }
+}
+
+@mixin heading-text() {
+    font-size: $heading-text-size;
+    font-family: $font-family-osake;
+    font-weight: $heading-text-style;
+    text-align: center;
+    text-shadow: 4px 4px rgb(235, 8, 8);
+}
+
+@mixin button() {
+    border: 1px solid white;
+    padding: 1.2rem 2.5rem;
+    font-size: $small-text-size;
+    border-radius: $border-radius;
+    border-width: 2px;
+    transition: 0.3s all;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+
+    @content;
+}
+
+@mixin overlay {
+    background-color: rgba($color: #000000, $alpha: 0.1);
+}

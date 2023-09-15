@@ -1,0 +1,15 @@
+.view-photo{
+    width: 100vw;
+    height: auto;
+}
+.inner-videos{
+    width: 1920px;
+    height: auto;
+}
+@media screen and (max-width: 600px){}
+.inner-videos {
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}

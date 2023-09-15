@@ -1,6 +1,6 @@
 import React from "react";
 import "./Bio.css";
-import personImage from "../../assets/image/personhamza.png";
+import personImage from "../../assets/image/Profile_Pic_01.png";
 
 function Bio() {
   return (
@@ -11,16 +11,7 @@ function Bio() {
       <div className="column-2">
         <h1 className="bio-heading">MY BIO</h1>
         <p className="bio-information">
-          I'm Hamza Ahmad located in Pakistan. I have been working as a 3D
-          Generalist for 8 years and have a well-rounded skill set in Modeling,
-          Texturing, Rigging and Animation and honed talents in creating
-          storyboards and designing graphics. Further, I am a recognized expert
-          in story development, planning, critical thinking and a communicative
-          collaborator. Over the years I had the privilege to work as a lead
-          Artist on animated characters and recently I have been working as an
-          artist on multiple real-time AR and VR projects with an academic
-          background in Visual Communication Design. I have a broad experience
-          and knowledge of production pipelines both for Films and Games.
+          Greetings! I'm Hamza Ahmad, a dedicated 3D Game Designer based in London. I possess a remarkable proficiency in transforming digital pixels into captivating virtual worlds that bring gaming fantasies to life. With a strong passion for creating immersive environments, I skilfully blend creative ideas with advanced technology. I've been on this journey for 8 years, crafting game elements, exciting gaming experience and bringing stories to life with 3D characters. I bring a wide array of skills to the table, from 3D modelling to lighting design, and creating engaging gameplays. I'm skilled at crafting detailed 3D backgrounds and designing game levels with exciting challenges. I also excel at designing user-friendly game interfaces to enhance player engagement. I aim to create excitement in players and ignite their imagination. Let's work together to take your gaming experience to new heights of thrill and enjoyment!
         </p>
       </div>
     </div>

@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Categorey.css";
 import character from "../../Data/character";
+import { UserContext } from "../../App";
 
 const Catergories = () => {
+  const contextvalue = useContext(UserContext);
   const [designs, setDesigns] = useState(character);
+  const navigate = useNavigate();
 
   const displayCharacter = (animation) => {
     if (animation !== "all") {
@@ -29,14 +33,17 @@ const Catergories = () => {
           }
         });
       });
-      console.log(subCategories);
       setDesigns(subCategories);
+
       return;
     }
     setDesigns(character);
   };
 
-  console.log(designs);
+  const allCharacterdisplay = (imgaesData) => {
+    contextvalue.setAnimation(imgaesData);
+    navigate("/view");
+  };
 
   return (
     <div className="portfolio-category-container">
@@ -84,30 +91,41 @@ const Catergories = () => {
         </div>
       </div>
       <div className="animations">
-        {designs &&
-          designs?.map((design) => {
-            return (
+        {designs?.map((design) => {
+          return (
+            <div>
               <div>
                 <div className="image-container">
-                  {design?.data?.map((dta) => {
-                    return (
-                      <div className="combine-img">
-                        <img
-                          src={dta?.image?.src}
-                          alt="animation"
-                          className="character-img"
-                        />
-                      </div>
-                    );
-                  })}
+                  {design.subCategory && design?.image && (
+                    <img
+                      src={design?.image?.src}
+                      alt="animation"
+                      className="character-img"
+                    />
+                  )}
                 </div>
-
-                <video loop autoPlay className="character-img">
-                  <source src={design?.video?.src} type="video/mp4" />
-                </video>
+                <div className="image-container">
+                  {design.subCategory && design?.video && (
+                    <video loop autoPlay muted={true} className="character-img">
+                      <source src={design?.video.src} type="video/mp4" />
+                    </video>
+                  )}
+                </div>
               </div>
-            );
-          })}
+
+              <div>
+                <div
+                  className="image-container"
+                  onClick={() => allCharacterdisplay(design.data)}
+                >
+                  {design?.data && (
+                    <img src={design?.data[0].image?.src} alt="animation" className="character-img"/>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

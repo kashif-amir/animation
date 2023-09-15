@@ -1,7 +1,7 @@
 .portfolio-heading {
   text-align: center;
   margin: 20px 0px;
-  font-family: "Crafty Girls", cursive;
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 35px;
   padding-top: 15px;
@@ -9,41 +9,34 @@
 
 .portfolio-category-content {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   margin: 0 auto;
   column-gap: 20px;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   color: white;
+  line-height: 1.8rem;
 }
 
 .portfolio-content {
-  font-family: "Crafty Girls", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 22px;
 }
 
 .animations {
-  margin-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 10px;
+  column-gap: 40px;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.character-img {
-  margin: 20px 0;
-  height: 220px;
-  width: 200px;
+  row-gap: 30px;
 }
 
 .portfolio-content:hover {
-  color: red;
+  color: lightblue;
 }
 
 .portfolio-category-container {
@@ -52,16 +45,52 @@
 
 .image-container {
   height: auto;
-  width: 600px;
-  border: 2px solid red;
+  width: 650px;
+  border: 1px solid white;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  column-gap: 10px;
-  align-items: flex-start;
+}
+
+.image-container:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 4px gray;
+}
+
+.character-img {
+  height: 400px;
+  width: 630px;
+}
+
+.character-img-1 {
+  height: 400px;
+  width: 630px;
 }
 
 .combine-img {
   height: 250px;
   width: 300px;
 }
+
+.character-video {
+  height: 400px;
+  width: 630px;
+}
+
+
+@media screen and (max-width: 600px) {
+.character-img {
+    height: auto;
+    width: 270px;
+    object-fit: contain;
+    object-position: center;
+}
+  .image-container {
+    height: auto;
+    width: auto;
+    border: 1px solid white;
+    display: flex;
+  }
+  .portfolio-category-content{
+    cursor: none;
+  }
+}
+

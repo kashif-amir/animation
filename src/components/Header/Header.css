@@ -1,6 +1,6 @@
 .portfolio-name,
 .header-content {
-  font-family: "Crafty Girls", cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header-container {
@@ -12,29 +12,34 @@
   align-items: center;
   padding: 10px 20px;
   position: fixed;
-  background-color: #d83c1e;
+  background-color: black;
   height: 90px;
   z-index: 100;
+ 
+
 }
 
-.portfolio-name {
+/* .portfolio-name {
   text-align: center;
   color: white;
   font-size: 35px;
-}
+} */
 
 .header-content {
   display: flex;
+  flex-direction: row;
   column-gap: 22px;
   align-items: center;
   cursor: pointer;
+ 
+
 }
 
 .wrapper-portfolio-logo {
   display: flex;
-  width: 30%;
-  justify-content: space-between;
+  
   align-items: center;
+  
 }
 
 .portfolio-logo {

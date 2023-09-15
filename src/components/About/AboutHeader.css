@@ -2,7 +2,7 @@
   font-family: "Crafty Girls", cursive;
 }
 
-.header-container {
+/* .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13,8 +13,8 @@
   position: fixed;
   height: 90px;
   z-index: 100;
-  background-color: #d83c1e;
-}
+  background-color: black;
+} */
 
 .portfolio-name {
   text-align: center;
@@ -29,8 +29,7 @@
 
 .wrapper-portfolio-logo {
   display: flex;
-  width: 30%;
-  justify-content: space-between;
+ 
   align-items: center;
 }
 

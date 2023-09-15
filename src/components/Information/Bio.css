@@ -1,21 +1,20 @@
 .bio-heading {
-  font-family: "Crafty Girls", cursive;
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
 
 .bio-container {
+  grid-gap: 50px 50px;
+  background-color: #000;
   display: flex;
   flex-direction: row;
-  width: 100%;
   flex-wrap: wrap;
-  grid-gap: 50px 50px;
-  background-color: black;
   justify-content: center;
+  width: 100%;
 }
 
 .column-1 {
   margin-top: 20px;
-  background-color: white;
 }
 
 .column-2 {
@@ -24,24 +23,48 @@
 }
 
 .personal-img {
-  width: 500px;
-  height: 650px;
+  /* width: 500px;
+  height: 650px; */
   object-fit: cover;
   object-position: 80% 10%;
   background-color: black;
 }
 
+@media only screen and (max-width: 600px) {
+  .personal-img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 80% 10%;
+  background-color: black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bio-information {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    color: lightgrey;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column-2 {
+    width: 70%;
+  }
+}
 .bio-information {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  font-size: medium;
   color: lightgrey;
-  line-height: 23px;
   font-size: 22px;
-  font-family: "Crafty Girls", cursive;
-  line-height: 2.5rem;
-  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2.2rem;
 }
 
 /* @media (max-width: 400px) {

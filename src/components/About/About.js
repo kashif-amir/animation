@@ -15,35 +15,32 @@ const About = () => {
       <div className="about-container">
         <img
           src="https://static.wixstatic.com/media/fc0bbd_189492e214174fb5b8a4335f6177875b~mv2.jpg/v1/fill/w_1252,h_520,al_c,q_85,enc_auto/fc0bbd_189492e214174fb5b8a4335f6177875b~mv2.jpg"
-          alt="image"
+          alt="about"
           className="aboutpage-img"
         />
         <div className="about-main-div">
           <div className="about-text">
             <h2 className="about-heading-paragraph">About</h2>
             <p className="first-paragraph">
-              I am a Qualified 3D artist with over 8 years of extensive
-              experience in CGI for Films and Games. Over the years I had the
-              privilege to work as a Lead Artist on Multiple Project like
-              real-time AR and VR projects. With the Academic background in
-              Visual Communication Designs and vast knowledge of 3D Art,
-              Production Pipelines both for Films and Games. Experienced Team
-              Lead and Game Artist with a demonstrated history of working in the
-              Marketing, Advertising, and Game Industry. Skilled in many 3D & 2D
-              tools i.e Unity 3D, Autodesk Maya, Pixologic Zbrush, Foundry Mari,
-              Substance Painter,3ds Max, Blender, Mixamo Fuse, Adobe Photoshop,
-              Adobe Illustrator, Adobe Animate, User Interface Design, Adobe
-              Creative Suite, and Art.
+              Crafting Unforgettable Gaming Adventures
+              At Neckla, we don't just make games; we create immersive journeys that players will treasure for years to come. As a dynamic Game Design Studio and Advertising Agency in London, our commitment to detail and storytelling ensures that our games leave a lasting impact in the gaming world.
             </p>
             <p className="second-paragraph">
-              I can design any kind of parts, products, assemblies, fixtures,
-              enclosures, prototypes, house 3D models, 2D and 3D floor plans,
-              and much more. I provide the highest quality and maintain
-              excellence level.
+              Fostering Creative Freedom
+              Innovation thrives when creativity is given room to flourish. At Neckla, we empower our brilliant team to unleash their creative potential. We provide them with the freedom and support they need to think big, resulting in games that redefine the boundaries of imagination.
             </p>
             <p className="third-paragraph">
-              For any information or just a quick Hi:
+              A Pledge to Excellence
+              Quality is at the heart of everything we do. We meticulously craft every detail, aiming for authenticity and precision in all our projects. This unwavering dedication sets us apart and guarantees that our games are nothing less than perfect.
             </p>
+            <p className="third-paragraph">
+              Building on Trust and Teamwork
+              Trust and respect form the cornerstone of our teamwork. We empower every team member to excel, cultivating an environment where every voice is valued, and every contribution matters.
+            </p>
+            <p className="third-paragraph">
+              A Passion for Quality and Precision
+              Quality is the foundation of our creations. We tirelessly pursue authenticity and precision in every facet of our work, from the tiniest element to the grandest project. This unwavering commitment to quality sets us apart and ensures that our games are nothing short of perfection.
+            </p>  
             <h3>nadeemhamza903@gmail.com</h3>
           </div>
         </div>
