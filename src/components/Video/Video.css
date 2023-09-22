@@ -6,6 +6,10 @@
   margin-top: 5rem;
 }
 
+.video-container.touched .video-controls {
+  opacity: 1;
+}
+
 .button {
   position: absolute;
   top: 50%;
@@ -18,9 +22,9 @@
   cursor: pointer;
 }
 
-
 .animation-video {
   overflow: hidden;
   height: 100%;
   width: 100vw;
 }
+

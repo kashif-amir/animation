@@ -42,13 +42,28 @@ const VideoPlayer = () => {
   const togglePlay = () => {
     setIsPlaying(prev => !prev);
   };
+  
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const videoContainer = document.querySelector('.video-container');
+  
+    // videoContainer.addEventListener('touchstart', function() {
+    //   this.classList.add('touched');
+    // });
+  
+    videoContainer.addEventListener('touchend', function() {
+      this.classList.remove('touched');
+    });
+  });
 
   return (
     <div className="video-container">
-      <video ref={videoRef} autoPlay loop controls className="animation-video">
+      <video ref={videoRef} autoPlay={true} loop controls={false} className="animation-video">
         <source src={reel} type="video/mp4" />
       </video>
-      <button className="play-button" onClick={togglePlay}>{isPlaying ? <BsPauseCircleFill size={25}/> : <AiFillPlayCircle size={25}/>}</button>
+      <div className='video-controls'>
+        <button className="play-button" onClick={togglePlay}>{isPlaying ? <BsPauseCircleFill size={27}/> : <AiFillPlayCircle size={27}/>}</button>
+      </div>
     </div>
   );
 };

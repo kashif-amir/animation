@@ -14,7 +14,7 @@
 }
 
 .column-1 {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .column-2 {
@@ -23,8 +23,8 @@
 }
 
 .personal-img {
-  /* width: 500px;
-  height: 650px; */
+  width: 500px;
+  height: 580px;
   object-fit: cover;
   object-position: 80% 10%;
   background-color: black;
