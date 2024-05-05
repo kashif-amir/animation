@@ -9,15 +9,12 @@ import Bio from "../Information/Bio";
 import Catergories from "../PortfolioCategory/Catergories";
 import logo from "../../assets/image/Logo.png";
 import './navbar.scss';
+import { Link } from "react-router-dom";
+
 
 function Header() {
   const navigate = useNavigate();
 
-  const homeIconClass = window.location.href.split('/').pop() === '#home' ? 'active' : '';
-  const stakingIconClass = window.location.href.split('/').pop() === 'staking' ? 'active' : '';
-  const faqIconClass = window.location.href.split('/').pop() === '#faq' ? 'active' : '';
-  const teamIconClass = window.location.href.split('/').pop() === '#team' ? 'active' : '';
-  const roadmapIconClass = window.location.href.split('/').pop() === '#roadmap' ? 'active' : '';
 
   useEffect(() => {
       const burger = document.querySelector('.hamburger');
@@ -47,24 +44,24 @@ function Header() {
         </div>
         <ul onClick={closeMobileNav}>
           <li>
-            <a href="/#home" className="tag">
+            <Link to="#home" className="tag">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className="tag">
+            <Link to="/about" className="tag">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#portfolio" className="tag">
+            <Link to="#portfolio" className="tag">
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/reel" className="tag">
+            <Link to="/reel" className="tag">
               Reel
-            </a>
+            </Link>
           </li>
         </ul>
 

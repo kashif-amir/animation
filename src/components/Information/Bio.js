@@ -1,6 +1,6 @@
 import React from "react";
 import "./Bio.css";
-import personImage from "../../assets/image/1695301138641-removebg.png";
+import personImage from "../../assets/image/oie_231457it7ZbbW9.png";
 
 function Bio() {
   return (

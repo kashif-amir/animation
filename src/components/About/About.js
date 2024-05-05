@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import AboutHeader from "./AboutHeader";
+import Header from "../Header/Header";
 import "./About.css";
 const About = () => {
   useEffect(() => {

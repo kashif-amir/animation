@@ -33,7 +33,7 @@
   opacity: 0;
   transition: opacity 0.5s;
 }
-
+  
 .video-container:hover .video-controls {
   opacity: 1;
 }
@@ -41,7 +41,25 @@
   opacity: 1;
 }
 
+.full-screen {
+  position: absolute;
+  top: 96%;
+  left: 97.5%;
+  color: white;
+  margin-bottom: 2px;
+}
+
 @media only screen and (max-width: 600px) {
+  .full-screen {
+    position: absolute;
+    top: 85%;
+    left: 91%;
+  }
+  
+}
+
+
+/* @media only screen and (max-width: 600px) {
   .video-controls {
     position: absolute;
     top: 50%;
@@ -53,10 +71,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .video-container:active .video-controls {
+  .video-container:hover .video-controls {
     opacity: 1;
   }
-}
+}  */
 
 /* .video-container {
   position: relative;

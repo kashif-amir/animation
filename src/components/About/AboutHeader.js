@@ -5,6 +5,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import "./AboutHeader.css";
 import logo from "../../assets/image/Logo.png";
+import { Link } from 'react-router-dom';
 
 function AboutHeader() {
   const navigate = useNavigate();
@@ -35,25 +36,25 @@ const closeMobileNav = () => {
           <img src={logo} alt="portfolio-logo" className="logo" />
         </div>
         <ul onClick={closeMobileNav}>
-          <li>
-            <a href="/#home" className="tag">
+        <li>
+            <Link to="/#home" className="tag">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className="tag">
+            <Link to="/about" className="tag">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#portfolio" className="tag">
+            <Link to="/#portfolio" className="tag">
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/reel" className="tag">
+            <Link to="/reel" className="tag">
               Reel
-            </a>
+            </Link>
           </li>
         </ul>
 

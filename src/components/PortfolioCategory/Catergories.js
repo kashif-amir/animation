@@ -34,15 +34,15 @@ const Catergories = () => {
         });
       });
       setDesigns(subCategories);
-
       return;
     }
     setDesigns(character);
   };
+  
 
-  const allCharacterdisplay = (imgaesData) => {
-    contextvalue.setAnimation(imgaesData);
-    navigate("/view");
+  const allCharacterdisplay = (imgaesData, name) => {
+    contextvalue.setAnimation(imgaesData, name);
+    navigate(`/view/${imgaesData[0].categeory}/${name}`);
   };
 
   return (
@@ -112,12 +112,11 @@ const Catergories = () => {
                   )}
                 </div>
               </div>
-
               <div>
                 <div
                   className="image-container"
-                  onClick={() => allCharacterdisplay(design.data)}
-                >
+                  onClick={() => allCharacterdisplay(design.data, design.name)}
+                  >
                   {design?.data && (
                     <img src={design?.data[0].image?.src} alt="animation" className="character-img"/>
                   )}

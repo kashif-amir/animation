@@ -1,12 +1,11 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
 import About from "./components/About/About";
 import { createContext } from "react";
 import View from "./components/Category/View";
 import Reel from "./components/Reel/Reel"
-import Navbar from "./components/Header/Navbar";
 
 export const UserContext = createContext();
 
@@ -25,14 +24,14 @@ function App() {
           setAnimation,
         }}
       >
-        <Router>
+        <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Header />} exact />
-            <Route path="/about" element={<About />} exact />
-            <Route path="/view" element={<View />} exact />
-            <Route path="/reel" element={<Reel />} exact />
+            <Route path="/" element={<Header />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/view/:category/:id" element={<View />} />
+            <Route path="/reel" element={<Reel />} />
           </Routes>
-        </Router>
+        </BrowserRouter>
       </UserContext.Provider>
     </div>
   );

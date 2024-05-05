@@ -32,11 +32,12 @@
 
 @media only screen and (max-width: 600px) {
   .personal-img{
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  object-position: 80% 10%;
-  background-color: black;
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+    object-position: 80% 10%;
+    background-color: black;
+    margin-top: 1rem;
   }
 }
 
